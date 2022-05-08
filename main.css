@@ -163,7 +163,6 @@ table, th, td {
 
     #nftk {
         margin: 0px;
-        overflow: hidden;
     }
     
     #nftk-table td {
@@ -171,6 +170,5 @@ table, th, td {
         padding-bottom: 2em;
         width: 33%;
         height: 50%;
-        overflow: hidden;
     }
 }

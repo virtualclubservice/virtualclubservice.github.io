@@ -61,6 +61,29 @@ body {
     margin-right: 5%;
 }
 
+#more1 {
+    display: none;
+}
+
+#contact-me-btn {
+    font-size: 130%;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color:chocolate;
+    transition: 100ms;
+    padding: 12px;
+}
+
+#contact-me-btn:hover {
+    background-color:rgb(243, 133, 54);
+}
+
+#contact-me-btn:hover {
+    background-color:rgb(243, 133, 54);
+}
+
 ul {
     margin-left: 5%;
     line-height: 180%;
@@ -84,26 +107,33 @@ a:hover {
     text-decoration: dotted underline;
 }
 
-#fasz {
-    width: 80%;
-    min-width: 90%;
-    display:block;
-    margin:auto;
+button {
+    font-size: medium;
+    color: rgb(221, 221, 221);
+    background-color: rgb(37, 42, 55);
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 2px;
+    padding: 6px;
+    cursor: pointer;
 }
 
-.column {
-    float: left;
-    /*margin: 8px;*/
-    width: 33%;
-    min-height: 12rem;
-    overflow: hidden;
-    text-align: center;
+button:hover {
+    font-size: medium;
+    color: rgb(221, 221, 221);
+    background-color: rgb(49, 56, 73);
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 2px;
+    padding: 6px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+hr {
+    border: 2px solid rgb(221, 221, 221);
+}
+
+table, th, td {
+    border: 2px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    padding: 4px;
 }
 
 @media screen and (max-width: 800px) {

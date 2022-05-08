@@ -4,6 +4,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css">
       <title>Virtual Club Service</title>
+
+      <script>
+        function showMore(_dots, _more, _btn) {
+          var dots = document.getElementById(_dots);
+          var moreText = document.getElementById(_more);
+          var btnText = document.getElementById(_btn);
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Mutass többet"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Mutass kevesebbet"; 
+            moreText.style.display = "inline";
+          }
+        }
+      </script>
+
     </head>
     <body>
         <div id="hero-image">
@@ -12,75 +31,83 @@
             </div>
         </div>
         <div id="main-text">
+            <hr>
+            <h2 style="text-align: center;">
+              <i>Az NFT (nem felcserélhető token) nem csak egy spekulációs játék!</i>
+            </h2>
+            <hr>
+            <button id="contact-me-btn" onclick="window.location.href='contact.html'">Contact me!</button>
             <p>
-              Az NFT nem csak egy spekulációs játék! Ebből a technológiából, az okosszerződésekből és a grafikus képekből, sokkal többet ki lehet hozni!<br>Érvényesüljön egyszerre az okoszerződés nyújtotta információ biztonság, a grafikai képek vizuális élménye és a közösségek innovatív működtetése!<br>Hozzuk létre együtt az ország első NFT clubját!
+              A technológiából, az okosszerződésből és a grafikus képekből sokkal többet ki lehet hozni.<br>Egyszerre érvényesülhet az okosszerződés nyújtotta információbiztonság, a grafikai képek vizuális élménye és a közösségek innovatív működtetése. 
+              <br>
+              <h3>Hozzuk létre együtt az ország első NFT clubját!</h3>
+              Minden NFT egy egyedi kódsor, korlátozott számban, részekre nem felosztható formában hozzákapcsolódik egy egyedi digitális fájlhoz<span id="dots1">...</span><span id="more1">. Építsd ki a kiválasztott grafikával az NFT és a hozzátartozó okosszerződés segítségével a zárt körű társaságodat és emeld új szintre a club-élményt - a Virtual Club Service támogatásával.
               <br><br>
-              Építsd ki a legbensőségesebb zárt körű társaságot, az NFT és a hozzátartozó okoszerződési jog segítségével.<br>Emeld új szintre a klub élményt, a Virtual Club Service csapata segítségével.
+              Ha Ön egy közösség vagy club irányítója és a legmodernebb stílusban, de mégis egyszerűen de biztonságosan akarja azt működtetni, akkor az NFT clubbal szintet léphet.
               <br><br>
-              Az NFT egy nem helyettesíthető fizető eszköz, amíg mondjuk egy tízezer forintos bankjegy az országban mindenhol ugyanolyan,<br> az NFT egy <b>egyedi kódsor</b>, ami korlátozott számban, kisebb részekre nem felosztható formában van <b>hozzákapcsolva valamilyen digitális fájlhoz</b>,
-              <br><br>
-              Csapatunk célja, hogy az NFT-ben rejlő teljes potenciált kihozzuk, az országban először. Összekapcsoljuk <b>az okosszerződés adta innovatív lehetőségeket</b>, és az igénylő által megálmodott <b>grafikát</b>, egy <i>klubrendszerben</i>.     
-              <br><br>
-              Ha egy közösség, klub irányítója, a legmodernebb stílusban, de mégis egyszerűen és biztonságosan akarja működtetni, az NFT club-bal szintet léphet.
-              <br><br>
-              Az NFT club-ba csak azok léphetnek be, akik megvásárolták a kollekció egyik darabját. Ezt az okoszerződés teszi lehetővé. A club egy Discord szerver lesz, ahol a tagok értesülhetnek a klub legújabb híreiről, kapcsolatban lehetnek a többi klubtaggal, extra tartalmakhoz férhetnek hozzá. 
+              Az NFT club-ba csak azok léphetnek, akik megvásárolták a kollekció egyik darabját, ezt az okosszerződés garantálja. A tagok azonnal értesülhetnek a club legújabb híreiről, kapcsolatot tarthatnak más clubtagokkal, extra tartalmakhoz férhetnek hozzá. 
+              </span>
             </p>
+            <button id="btn1" onclick="showMore('dots1', 'more1', 'btn1')">Mutass többet</button>
             <br>
             <div id="felsorolas">
-              <h2>Miért jó az NFT-klub tulajdonosának lenni?</h2>
+              <h2>Miért jó NFT-club szervezőjének lenni?</h2>
               <ul>
                 <li>Újszerű, stílusos, kényelmes megoldás</li>
-                <li>Rengeteg új lehetőséget nyit meg az igénylő számára</li>
-                <li>Teljes mértékben személyre szabott privilégiumokat szabhat ki a megrendelő</li>
-                <li>Profit szerzési lehetőség</li>
-                <li>Nagy felhajtás követné a médiában, ezzel ingyen reklám is</li>
-                <li>Ellépés a versenytársaktól 🡪 <b>MAKE A DIFFERENCE!</b></li>
-                <li>Brand építés</li>
+                <li>Új lehetőséget nyílik a club kapcsolattartására és tartalmak hozzáféréséhez</li>
+                <li>Személyre szabott előjogokat biztosíthat a tagoknak a szervező</li>
+                <li>Egyszerre biztosít exkluzív tartalmat és befektetési lehetőséget</li>
+                <li>Nagy felhajtást  és sok figyelmet vonz a médiában <i>(„első NFT club”)</i></li>
+                <li>Megkülönböztetést ad a versenytársaktól</li>
+                <li>Korszerűség képét szolgáltatja a brand-hez</li>
               </ul>
               <br>
               <h2>Miért jó az NFT-klub tagjának lenni?</h2>
               <ul>
                 <li>Csábító kiváltságok</li>
-                <li>FOMO</li>
+                <li>FOMO érzet</li>
                 <li>Státuszszimbólum</li>
-                <li>Valahová tartozás</li>
-                <li>Befektetés (Másod piacon értékesíthetik a későbbiekben)</li>
+                <li>Színvonalas brand-hez tartozás</li>
+                <li>Befektetés (másodpiacon értékesíthető a későbbiekben)</li>
               </ul>
             </div>
             <br>
             <p>
-              Ha igénybe veszed a szolgáltatásunkat kapni fogsz: 300db. arculatodhoz tökéletesen passzoló NFT-t, amelynek kiváltságait, árát, featurejeit teljes mértékben te szabod meg.
+              Ha NFT club szervezőjeként igénybe veszed a VCS szolgáltatását, akkor 300 darab arculatodhoz tökéletesen passzoló NFT-t kapsz, amelynek kiváltságait, árát, grafikai jellemzőit te szabod meg.
             </p>
             <br>
             <div id="nftk">
-              <h2>Mire jók az NFT-k?</h2>
+              <h2>Mire jó az NFT?</h2>
               <img src="images/Kép1.png" id="fasz">
               <p>
-                Az együttműködésünknek két igény szerint választott folyamata van:
+                A VCS szolgáltatását két formában választhatod: 
                 <br>
                 <ol type="A">
-                  <li>800.000 Ft, amely magába foglalja a 300 képet, annak tokenizálását és értékesíthetőségét</li>
-                  <li>400.000 Ft+ IPO 15%</li>
+                  <li>800.000 Ft teljes díj kifizetéséért<br>amely magába foglalja a 300 képet, annak tokenizálását és értékesíthetőségét </li>
+                  <li>400.000 Ft + IPO 15% <br> <table><tr><td>300</td><td>150 000</td><td>45 000 000</td></tr></table> (lehetséges bevétel, ha 150.000 Ft egy NFT)</li>
                 </ol>
-                <img src="images/image003.png" style="width: 100%; max-width: 200px;">(lehetséges jövedelem, ha például 150.000 Ft-be kerül egy NFT)
               </p>
             </div>
-            <p>
-              Légy te az első Magyarországon, akinek NFT klubja van a mi csapatunk segítségével. Válaszd a fejlődést és lépj egy szintet!
-            </p>
-            <p>
-              Egy csapat fiatal vagyunk, különböző szakterületekről (jogász, programozó, grafikus, információ biztonsági szakember), Összeálltunk, és megalapítottuk a Virtual Club     Servicet: a klubszolgáltatást, amelyre a virtuális tér megjelenése óta szükségünk lett volna, de egészen máig nem létezett. A grafikusunk teljes mértékben kézzel készített minimalista, elegáns, letisztult rajzaival kezdődik a munka, aztán ezek a képek bekerülnek az általunk elkészített programba, ahol elkészül a 300db teljesen egyedi kép, ezután már csak tokenizánunk kell az elkészült képeket. Ez teszi lehetővé, hogy eladhassuk a képeket és a képekkel együtt a tulajdoni jogot, amivel kiválthatja a klub nyújtotta privilégiumokat.
-            </p>
-            <br>
-            <h2>MetaDuma projekt: </h2>
-            <ol>
-              <li>Az igénylő általi dizájnt és víziót a grafikusunk megalkotja, majd visszaküldi az igénylőnek, amely után következik a finom hangolás. A finom hangolást követően bekerülnek a képek a VCS-programba, ahol elkészül a 300db egyedi kép. </li>
-              <li>Az NFT-ket értékesíthetjük az Opensea platformon vagy saját weboldalon</li>
-              <li>Az NFT-k beárazásában és privilégiumok kitalálásában az igénylő teljesmértékben szabad kezet kap</li>
-              <li>A honoráriumot a fent említett két módon lehet megadni, egy vállalkozási szerződés keretein belül</li>
-            </ol>
-            <p>Korábbi referencia munkánk: <a href="https://opensea.io/collection/relaxed-rats" target="_blank">Relaxed Rats Project</a></p>
-            <img src="images/image009.png" style="width: 60%; display:block; margin:auto;">
+            <hr>
+            <h2 style="text-align: center;">
+              <i>Indítsd te az első NFT club-ot Magyarországon!</i>
+            </h2>
+            <hr>
+            <div>
+              <h2>Rólunk</h2>
+              <p>
+                Egy csapat innovatív fiatal, akik összekapcsoljuk a szakterületeinket (jog, programozás, grafika, információ biztonság). 
+              </p>
+              <br>
+              <h2>A NFT club elindításának lépései: </h2>
+              <ol>
+                <li>Az igénylő által megálmodott dizájnt és víziót a grafikusunk elkészíti, az egyeztetések finomhangolását követően bekerülnek a képek a VCS informatikai programjába, kialakítva a 300 darab egyedi képet. </li>
+                <li>Az NFT értékesíthető az Opensea platformon vagy saját weboldalon</li>
+                <li>Az NFT árazásában és kiváltságok kitalálásában az igénylő teljesmértékben szabadon dönt. A grafikusunk kézzel készített, minimalista, elegáns, letisztult rajzaival kezdődik a munka. A képek bekerülnek az általunk elkészített informatikai programba, ahol elkészül a 300 darab teljesen egyedi képből álló kollekció. Az NFT rendszerében, az okosszerződésekhez rendelve, az egyedi képek tokenizálása garantálja, hogy a képek együtt mozogjanak a tulajdoni jogukkal, valamint a club nyújtotta kiváltságokkal.</li>
+              </ol>
+              <p>Korábbi referencia munkánk: <a href="https://opensea.io/collection/relaxed-rats" target="_blank">Relaxed Rats Project</a></p>
+              <img src="images/image009.png" style="width: 60%; display:block; margin:auto;">
+            </div>
         </div>
     </body>
 </html>

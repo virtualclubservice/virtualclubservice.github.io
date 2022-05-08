@@ -157,7 +157,13 @@ table, th, td {
     }
 
     #nftk-table {
-        margin: 0;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #nftk {
+        margin: 0px;
+        overflow: hidden;
     }
     
     #nftk-table td {
@@ -165,5 +171,6 @@ table, th, td {
         padding-bottom: 2em;
         width: 33%;
         height: 50%;
+        overflow: hidden;
     }
 }

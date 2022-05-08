@@ -84,6 +84,20 @@ body {
     background-color:rgb(243, 133, 54);
 }
 
+#nftk-table {
+    width: inherit;
+}
+
+#nftk-table td {
+    text-align: center;
+    /*padding: 5%;*/
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 33%;
+    border-width: 10px;
+    font-size: 120%;
+}
+
 ul {
     margin-left: 5%;
     line-height: 180%;
@@ -136,9 +150,20 @@ table, th, td {
     padding: 4px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #main-text {
         margin: 0;
         padding: 2%;
+    }
+
+    #nftk-table {
+        margin: 0;
+    }
+    
+    #nftk-table td {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        width: 33%;
+        height: 50%;
     }
 }
